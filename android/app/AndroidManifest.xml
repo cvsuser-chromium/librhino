@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hybroad.media"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:persistent="true"
+    >
+    <!-- android:sharedUserId="android.uid.system" -->
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
+    <!-- permissions -->
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" /> -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="com.hybroad.media.MediaApplication"
+        android:icon="@drawable/app_my_media"
+        android:label="@string/app_name"
+        android:allowBackup="true">
+        <activity android:name="com.hybroad.media.MediaDeviceManager"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleInstance" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hybroad.media.MediaFileManager"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleTask" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <!-- start: video.................................................................. -->
+        <activity android:name="com.hybroad.video.VideoBrowser"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.FileExplorer.activity" />
+                <category android:name="android.intent.category.DEFAULT" />                
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+       
+        <activity android:name="com.hybroad.video.VideoPlayer"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <!-- end: video.................................................................. -->
+        
+        <!-- start: music.................................................................. -->
+        <activity android:name="com.hybroad.music.MusicBrowser"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleTask" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hybroad.music.MusicPlayer"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleTask" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.hybroad.music.MusicService">
+        	<intent-filter>
+        		<action android:name="com.hybroad.music.MUSIC_SERVICE"/>
+        	</intent-filter>
+        </service>
+        <!-- end: music.................................................................. -->
+        
+        <!-- start: picture.................................................................. -->
+        <activity android:name="com.hybroad.image.ImageBrowser"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleTask" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hybroad.image.ImagePlayer"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:launchMode="singleTask" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- end: picture.................................................................. -->
+
+        <receiver android:name="com.hybroad.dlna.DMRStarter" >
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.hybroad.dlna.START_DMR" />
+            </intent-filter>
+        </receiver>
+        <!--   receiver android:name=".NetworkUtils">
+        <intent-filter>
+          <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+      </receiver-->
+      <service android:name="com.hybroad.dlna.DMRService">
+        <intent-filter>
+          <action android:name="com.hybroad.dlna.DMR_SERVICE"/>
+          </intent-filter>
+      </service>
+      <service android:name="com.hybroad.dlna.AirPlayService">
+        <intent-filter>
+          <action android:name="com.hybroad.dlna.AIRPLAY_SERVICE"/>
+          </intent-filter>
+      </service>
+  </application>
+</manifest>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:dlna="urn:schemas-dlna-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<device>
+<dlna:X_DLNADOC>DMR-1.50</dlna:X_DLNADOC>
+<deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+<presentationURL>/</presentationURL>
+<friendlyName>YX-MediaRender()</friendlyName>
+<manufacturer>YUXING CO,Ltd</manufacturer>
+<manufacturerURL>http://www.yuxing.com.cn/labs</manufacturerURL>
+<modelDescription>UPnP/AV Media Renderer Device</modelDescription>
+<modelName>UPnP Renderer</modelName>
+<modelURL>http://www.yuxing.com.cn/labs</modelURL>
+<UDN>uuid:2e1e9f8e-97ec-44f7-ab3f-</UDN>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+<SCPDURL>/AVTransport_scpd.xml</SCPDURL>
+<controlURL>_urn:schemas-upnp-org:service:AVTransport_control</controlURL>
+<eventSubURL>/2e1e9f8e-97ec-44f7-ab3f-/AVTransport_Subscribe/</eventSubURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+<SCPDURL>/ConnectionManager_scpd.xml</SCPDURL>
+<controlURL>_urn:schemas-upnp-org:service:ConnectionManager_control</controlURL>
+<eventSubURL>/2e1e9f8e-97ec-44f7-ab3f-/ConnectionManager_Subscribe/</eventSubURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+<SCPDURL>/RenderingControl_scpd.xml</SCPDURL>
+<controlURL>_urn:schemas-upnp-org:service:RenderingControl_control</controlURL>
+<eventSubURL>/2e1e9f8e-97ec-44f7-ab3f-/RenderingControl_Subscribe/</eventSubURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:X-CTC_Subscribe:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:X-CTC_Subscribe</serviceId>
+<SCPDURL>/X-CTC_Subscribe_scpd.xml</SCPDURL>
+<controlURL>_urn:schemas-upnp-org:service:X-CTC_Subscribe_control</controlURL>
+<eventSubURL>/2e1e9f8e-97ec-44f7-ab3f-/X-CTC_Subscribe_Subscribe/</eventSubURL>
+</service>
+</serviceList>
+</device>
+</root>

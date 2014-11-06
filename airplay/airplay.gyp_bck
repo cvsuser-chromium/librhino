@@ -1,0 +1,54 @@
+# Copyright (c) 2012 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+{
+  'includes': [
+    'network.gypi',
+  ],
+  'conditions': [
+    ['OS=="linux"', {
+    }],
+    ['OS=="android"', {
+      'includes': [
+      ],
+    }],
+    ['OS=="win"', {
+      'includes': [
+      ],
+    }],
+  ],
+  'targets': [
+   {
+     'target_name': 'airplay',
+     'type': 'none',
+     'dependencies': [
+        'airplay_network',
+     ],
+     'conditions': [
+       ['OS=="linux"', {
+         'dependencies': [
+         ],
+       }],
+       ['OS=="android"', {
+         'dependencies': [
+        ],
+       }],
+       ['OS=="win"', {
+         'defines': [
+           'OS_WIN32',
+         ],
+         'dependencies': [
+         ],
+         'include_dirs': [
+         ],
+         'cflags': [
+           '/W3',
+           '/wd4996',
+           '/nologo',
+         ],        
+       }],
+     ],
+   }
+  ]
+}
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+<specVersion>
+	<major>1</major>
+	<minor>0</minor>
+</specVersion>
+<actionList>
+	<action>
+	<name>GetProductInfo</name>
+	<argumentList>
+		<argument>
+			<name>CurrentURI</name>
+			<direction>in</direction>
+			<relatedStateVariable>AVTransportURI</relatedStateVariable>
+		</argument>
+		<argument>
+			<name>Products</name>
+			<direction>out</direction>
+			<relatedStateVariable>A_ARG_TYPE_Products</relatedStateVariable>
+		</argument>
+	</argumentList>
+	</action>
+	<action>
+	<name>Order</name>
+		<argumentList>
+			<argument>
+			<name>Action</name>
+			<direction>in</direction>
+			<relatedStateVariable>PurchaseAction</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>ProductId</name>
+			<direction>in</direction>
+			<relatedStateVariable>ProductId</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>ServiceId</name>
+			<direction>in</direction>
+			<relatedStateVariable>ServiceId</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>ContentId</name>
+			<direction>in</direction>
+			<relatedStateVariable>ContentId</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>ColumnId</name>
+			<direction>in</direction>
+			<relatedStateVariable>ColumnId</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>PurchaseType</name>
+			<direction>in</direction>
+			<relatedStateVariable>PurchaseType</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>ContentType</name>
+			<direction>in</direction>
+			<relatedStateVariable>ContentType</relatedStateVariable>
+			</argument>
+			<argument>
+			<name>AutoRenewal</name>
+			<direction>in</direction>
+			<relatedStateVariable>AutoRenewal</relatedStateVariable>
+			</argument>
+		</argumentList>
+	</action>
+</actionList>
+
+<serviceStateTable>
+	<stateVariable sendEvents="no">
+	<name>A_ARG_TYPE_Products</name>
+	<dataType type="urn:CTC:X-CTC_Subscribe:Products">string</dataType>
+	</stateVariable>
+	
+	<stateVariable sendEvents="no">
+		<name>PurchaseAction</name>
+			<dataType>int</dataType>
+			<defaultValue>1</defaultValue>
+			<allowedValueList>
+			<allowedValue>1</allowedValue>
+			<allowedValue>2</allowedValue>
+			<allowedValue>3</allowedValue>
+		</allowedValueList>
+	</stateVariable>
+	
+	<stateVariable sendEvents="no">
+	<name>AVTransportURI</name>
+	<dataType>string</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ProductId</name>
+	<dataType>string</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ServiceId</name>
+	<dataType>string</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ContentId</name>
+	<dataType>string</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ColumnId</name>
+	<dataType>string</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>PurchaseType</name>
+	<dataType>int</dataType>
+	<defaultValue>0</defaultValue>
+	<allowedValueList>
+	<allowedValue>0</allowedValue>
+	<allowedValue>1</allowedValue>
+	<allowedValue>2</allowedValue>
+	<allowedValue>3</allowedValue>
+	</allowedValueList>
+	</stateVariable>
+<stateVariable sendEvents="no">
+<name>ContentType</name>
+	<dataType>int</dataType>
+	<defaultValue>1</defaultValue>
+	<allowedValueList>
+	<allowedValue>1</allowedValue>
+	<allowedValue>2</allowedValue>
+	<allowedValue>10</allowedValue>
+	<allowedValue>14</allowedValue>
+	</allowedValueList>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>AutoRenewal</name>
+	<dataType>boolean</dataType>
+	<defaultValue>true</defaultValue>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>IsFree</name>
+	<dataType>boolean</dataType>
+	<defaultValue>false</defaultValue>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ProductPrice</name>
+	<dataType>int</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>ExpireTime</name>
+	<dataType>dateTime</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>RentalTerm</name>
+	<dataType>int</dataType>
+	</stateVariable>
+	<stateVariable sendEvents="no">
+	<name>LimitedTimes</name>
+	<dataType>int</dataType>
+</stateVariable>
+</serviceStateTable>
+</scpd>
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="Product">
+<xs:element name="ProductId" type="xs:string" />
+<xs:element name="ServiceId" type="xs:string" />
+<xs:element name="ContentId" type="xs:string" />
+<xs:element name="ColumnId" type="xs:string" />
+<xs:element name="ProductName" type="xs:string" />
+<xs:element name="ProductDesc" type="xs:string" minOccurs="0" />
+<xs:element name="Type" type="xs:int" />
+<xs:element name="Price" type="xs:int" />
+<xs:element name="Expires" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="RentalTerm" type="xs:int" minOccurs="0"/>
+<xs:element name="Times" type="xs:int" minOccurs="0" />
+<xs:element name="IsFree" type="xs:boolean" minOccurs="0"/>
+</xs:complexType>
+<xs:complexType name="Products">
+<xs:sequence>
+<xs:element name="Product" type="Product" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dialog_1"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bg_dialog_1"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_1_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#80969696" >
+
+        <ImageView
+            android:id="@+id/dialog_1_head_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:src="@drawable/info_hint" />
+
+        <TextView
+            android:id="@+id/dialog_1_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dialog_1_head_icon"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_1_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_1_head_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#80969696" >
+
+        <ListView
+            android:id="@+id/dialog_1_body_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_1_foot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_1_body_layout"
+        android:layout_centerHorizontal="true"
+        android:background="#80969696" >
+
+        <Button
+            android:id="@+id/dialog_1_foot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:singleLine="true"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

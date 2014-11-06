@@ -1,0 +1,71 @@
+#############################################################################
+## Copyright (c) 2004 Intel Corporation All Rights Reserved. 
+## 
+## The source code contained or described herein and all documents related to
+## the source code ("Material") are owned by Intel Corporation or its 
+## suppliers or licensors. Title to the Material remains with Intel 
+## Corporation or its suppliers and licensors. The Material contains trade 
+## secrets and proprietary and confidential information of Intel or its
+## suppliers and licensors. The Material is protected by worldwide copyright
+## and trade secret laws and treaty provisions. No part of the Material may 
+## be used, copied, reproduced, modified, published, uploaded, posted, 
+## transmitted, distributed, or disclosed in any way without Intel's prior 
+## express written permission.
+## 
+## No license under any patent, copyright, trade secret or other 
+## intellectual property right is granted to or conferred upon you by 
+## disclosure or delivery of the Materials, either expressly, by 
+## implication, inducement, estoppel or otherwise. Any license under such 
+## intellectual property rights must be express and approved by Intel in 
+## writing.
+#############################################################################
+
+MIPSEL-ROOT		= /usr/local
+COSSTOOLS		= mipsel-linux-
+# What compiler to use
+#CC = gcc
+CC				= $(COSSTOOLS)gcc
+
+# Archiver
+#AR = ar -cuvr
+AR              = $(COSSTOOLS)ar -cuvr
+
+# Compiler flags, -g for debug, -c to make an object file
+
+ifeq ($(DBG),1)
+#	CFLAGS =  -g -Wall -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+#	CFLAGS =  -g -Wl,-Bstatic -Wall -Wmissing-prototypes -msoft-float -pthread -lrt -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+	CFLAGS =  -g -Wl,-Bstatic -Wall -msoft-float -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+else
+#	CFLAGS = -Wall -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+#	CFLAGS = -O3 -fPIC -Wall -Wl,-Bstatic -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+	CFLAGS = -O3 -fPIC -Wall -DLINUX_BUILD -D_POSIX -D__cdecl="" -D_cdecl="" -D__stdcall="" -D__int64="long long" -MP -MMD
+endif
+
+INCLUDEPATH = -I../../../inc -I../../../../Util/inc -I../../../../Support/inc -I../../../../Dtcp/inc
+#INCLUDEPATH = -I$(MIPSEL-ROOT)/include \
+			-I$(MIPSEL-ROOT)/include/linux \
+			-I../../../inc -I../../../../Util/inc -I../../../../Support/inc -I../../../../Dtcp/inc
+
+VPATH += ../
+
+#all:$(TARGET)
+all: $(OBJS)
+#%.a: $(OBJS)
+#	mkdir -p $(TARGETPATH)
+#	$(AR) $(TARGETPATH)/$@ $(^F)
+
+%.o :%.c
+	$(CC) $(CFLAGS) $(INCLUDEPATH) -c $<
+	cp $@ ../../../../.libs/$@
+
+-include $(OBJS:%.o=%.d)
+
+# Declare $(OBJS) as SECONDARY so that they will not be automatically
+# deleted after archived into a static library
+.SECONDARY : $(OBJS)
+
+.PHONY:clean
+# Clean
+clean:
+	rm -rf $(TARGETPATH)/$(TARGET) *.o *.d

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string name="app_name">MyMedia</string>
+
+       <!-- start frame上部菜单字符串 -->
+       <string name="movie_symbol">|</string>
+
+       <!-- 查看方式 -->
+       <string name="playlist_menu_scanmode">Scan Mode</string>
+       <string name="playlist_menu_scanmode_list">ListMode</string>
+       <string name="playlist_menu_scanmode_thumb">Thumb</string>
+       <string name="playlist_menu_scanmode_poster">Poster</string>
+       <string name="playlist_menu_scanmode_prescan">Previous Scan</string>
+
+       <!-- 电影排序 -->
+       <string name="playlist_menu_order">Order Videos</string>
+       <string name="playlist_menu_order_title">Order by Name</string>
+       <string name="playlist_menu_order_add_date">Order by Add Date</string>
+       <string name="playlist_menu_order_size">Order by Size</string>
+
+       <!-- 播放列表 -->
+       <string name="playlist_menu_latestplayed">Latest Played</string>
+       <string name="playlist_menu_all">All videos</string>
+
+       <!-- 我的最爱 -->
+       <string name="playlist_menu_playlist">Play List</string>
+       <string name="playlist_menu_modifylistname">Modify List Name</string>
+       <string name="playlist_menu_newlistname">New List Name</string>
+       <!-- end frame上部菜单字符串 -->
+
+       <!-- start frame底部提示 -->
+       <string name="playlist_bottom_add">Add to Favorite</string>
+       <string name="play_bottom_del">Delete File</string>
+       <string name="playlist_bottom_info">Details</string>
+       <string name="playlist_bottom_help">Help</string>
+       <string name="playlist_bottom_del">in current list delete</string>
+       <!-- end frame底部提示 -->
+
+       <!-- start 其他字符串 -->
+       <string name="playlist_dialog_deitail_title">Details</string>
+       <string name="playlist_dialog_detail_ok">OK</string>
+       <string name="playlist_detail_title">Title</string>
+       <string name="playlist_detail_filetyle">Type</string>
+       <string name="playlist_detail_adddate">Add Date</string>
+       <string name="playlist_detail_size">Size</string>
+       <string name="playlist_detail_videotime">Time</string>
+       <string name="playlist_modify_success">Modification of success</string>
+       <string name="playlist_modify_fail">Modification of failed</string>
+       <string name="playlist_dialog_addto">Add to Playlist</string>
+       <string name="playlist_dialog_addto_front">Will be added to the：</string>
+       <string name="playlist_dialog_addto_end">Add to：</string>
+       <string name="scanner_finished">Whether to reload the data scanned?</string>
+
+       <!-- end 其他字符串 -->
+
+       <string name="confirm">Confirm</string>
+       <string name="cancel">Cancel</string>
+       <string name="del_success">Succeed</string>
+       <string name="del_info">Delete Video</string>
+       <string name="del_info_start">Are you sure to delete video</string>
+       <string name="del_all">Are you sure delete all marks ?</string>
+       <string name="no_video">No suitable video</string>
+       <string name="is_scanning">on scanning ...</string>
+       <string name="exit_vp">Exit</string>
+       <string name="friendly_info">Friendly info</string>
+       <string name="insert_sdcard">Please insert SDCard</string>
+       <string name="down_data">DownLoading data...</string>
+       <string name="scanning_data">Scanning data...</string>
+       <string name="order_data">Order...</string>
+       <string name="please_wait">Please wait</string>
+
+       <!-- 播放界面按钮 -->
+       <string name="choicePlayMode">Please select the playback mode</string>
+       <string name="playmodeStr">Play Mode</string>
+       <string name="nocycle">The order of play</string>
+       <string name="fullScreenBtnStr">Full Screen</string>
+       <string name="stopButtonStr">Stop</string>
+       <string name="pause">Suspended</string>
+       <string name="markpointStr">The media label you set:</string>
+       <string name="marknameStr">Mark Name:</string>
+       <string name="markToast">* If you have not set mark name,then will use default mark name!</string>
+       <string name="quickPlayToastStr">*Please input a number that between 1 and 9999!</string>
+       <string name="savemarkStr">Save</string>
+       <string name="cancelmarkStr">Cancel</string>
+       <string name="mediaInfo">video information</string>
+       <string name="medianameStr">Video Name:</string>
+       <string name="mediapathStr">Video Path:</string>
+       <string name="mediasizeStr">Video Size:</string>
+       <string name="prescan_filesize">Size:</string>
+       <string name="volumeStr">volume:</string>
+       <string name="list_mode">list</string>
+       <string name="list_thumb">Thumbnail</string>
+       <string name="list_poster">posters</string>
+       <string name="video_control_menu">player menu</string>
+       <string name="select_tag">Label Options ...</string>
+       <string name="stereoMode_change">stereoMode change</string>
+       <string name="tag">label</string>
+       <string name="no_set_tag">you have not set a bookmark</string>
+       <string name="now_video_playmode">currently playing mode:</string>
+       <string name="not">No</string>
+       <string name="yes">Yes</string>
+       <string name="continue_playvideo">whether to continue play the video?</string>
+       <string name="show_control">display control</string>
+       <string name="play">Play</string>
+       <string name="recommend_success">collection success</string>
+       <string name="normal_screen">Quit Full Screen</string>
+       <string name="save_success">saved successfully</string>
+       <string name="video_tag">Video Bookmarks</string>
+       <string name="closed">Close</string>
+       <string name="sdcard_pull">storage device have removed</string>
+       <string name="video_no_set_tag">This video has not set a bookmark</string>
+       <string name="volumecontrol">volume control</string>
+       <string name="volumed_lowest">minimize the volume</string>
+       <string name="volumed_high">maximum volume</string>
+       <string name="tag_exist">label already exists!</string>
+       <string name="open">Open</string>
+       <string name="delete">Delete</string>
+       <string name="hour">H</string>
+       <string name="minute">M</string>
+       <string name="second">S</string>
+       <string name="jumpto">Jump to</string>
+       <string name="willjumpto">Will jump to</string>
+       <string name="toplay">to play!</string>
+       <string name="outlimit">Maybe beyond video length</string>
+       <string name="setPrecision">Setting video precision of quickly play!</string>
+       <string name="precisionvalue">Precision Value:</string>
+       <string name="addsuccess">video have add to play list success</string>
+       <string name="subsetTitle">Sub Settings</string>
+       <string name="showsub">Display subtitles</string>
+       <string name="closesub">Closed captioning</string>
+       <string name="soundTrack">Audio track</string>
+       <string name="maxforward">Is the maximum speed ratio</string>
+       <string name="maxrewind">Is the maximum rewind multiples</string>
+       <string name="x_32">-32_X</string>
+       <string name="nosubTitle">No subtitles</string>
+       <string name="noTrack">No soundtrack</string>
+       <string name="time">Time adjustment</string>
+       <string name="time1">Time stamp</string>
+       <string name="position">Subtitles position</string>
+       <string name="size">Font size</string>
+       <string name="space">Character spacing</string>
+       <string name="line_space">The line spacing</string>
+       <string name="subtitle">Subtitle</string>
+
+       <!-- add by 2011-8-4 weiyunkun -->
+       <string name="playlist_list_hour">Hour</string>
+       <string name="playlist_list_minute">Minute</string>
+       <string name="playlist_list_second">Second</string>
+       <string name="playlist_detail_screen">PX</string>
+       <string name="playlist_detail_videocode">Video coding</string>
+       <string name="playlist_detail_audiocode">Audio coding</string>
+       <string name="playlist_detail_playcount">Times to play</string>
+       <string name="info_mess">Sure you want to exit</string>
+       <string name="no_sdcard">SDCARD does not exist</string>
+       <string name="no_recommend">Recommend</string>
+       <string name="del_info_end">"?"</string>
+       <string name="priorOneStr">Previous</string>
+       <string name="rewindStr">Rewind</string>
+       <string name="forwardStr">Forward</string>
+       <string name="nextOneStr">Next</string>
+       <string name="markStr">Set label</string>
+       <string name="getmarkStr">Get label</string>
+       <string name="volumeupStr">volume up</string>
+       <string name="volumedownStr">volume down</string>
+       <string name="sort_size">According to size arrangement</string>
+       <string name="sort_time">According to increase time arrangement</string>
+       <string name="sort_name">According to name arrangement</string>
+       <string name="list_pre_scan">Preview</string>
+       <string name="text_control">Captions control</string>
+       <string name="play_info">Broadcast picture prompting message</string>
+       <string name="position_x_title">Horizontal position</string>
+       <string name="position_y_title">Vertical position</string>
+       <string name="position1">Vertical position</string>
+       <string name="subpathtitle">Subtitle path：</string>
+       <string name="subencodetitle">Subtitle encode:</string>
+       <string name="subpathcub">*Please select the subtitle file</string>
+       <string name="wrongsub">Errors in the subtitle file</string>
+       <string name="three">"..."</string>
+       <string name="nototaltime">"--:--:--"</string>
+       <string name="help_title">Help Manual</string>
+       <string name="close">Close</string>
+       <string name="not_support_title">Not Support File Format!</string>
+       <string name="not_support_content">Sorry,The VideoPlayer Have Not Support This File Format!</string>
+       <string name="nofile">the file is not exist!</string>
+       <string name="isloading">data have not prepare success,please waiting!</string>
+       <string name="havenofile">Have no standard media file!</string>
+       <string name="disordered">data have not prepare success,maybe disordered when click next.</string>
+       
+		<!-- added by wtz -->
+		<string name="video">Video</string>
+	    <string name="music">Music</string>
+	    <string name="photo">Photo</string>
+	    
+	    <string name="zeroTime">00:00</string>
+	    <string name="noMusic">No Music</string>
+	    <string name="unknownInfo">Unknown Info</string>
+	    
+	    <string name="orderPlay">Order Play</string>
+	    <string name="randomPlay">Random Play</string>
+	    <string name="singleTrack">Single Track</string>
+	    
+	    <string name="show_detail_info">Show Detail Info</string>
+	    <string name="hide_detail_info">Hide Detail Info</string>
+	    <string name="start_play_slide">Start Slideshow</string>
+	    <string name="stop_play_slide">Stop Slideshow</string>
+	    <string name="clockwise_rotation">Clockwise Rotation</string>
+	    <string name="anticlockwise_rotation">Anticlockwise Rotation</string>
+	    <string name="drawing_failure">Drawing Failure</string>
+	    <string name="open_background_music">Open Background Music</string>
+    	<string name="close_background_music">Close Background Music</string>
+	    
+	    <string name="backDirectory">Previous Page</string>
+	    <string name="imageCurrentPath">"Current Path: "</string>
+	    <string name="musicCurrentPath">"Current Path: "</string>
+	    <string name="currentPath">"Current Path: "</string>
+	    
+	    <string name="openAutoPlay">Open Continuous Playback</string>
+	    <string name="closeAutoPlay">Close Continuous Playback</string>
+	    <string name="full_screen">Full Screen</string>
+    	<string name="exit_full_screen">Exit Full Screen</string>
+    	<string name="switch_subtitle">Switch Subtitles</string>
+    	<string name="switch_audio_track">Switch Tracks</string>
+    	<string name="switch_channel">Switch Channels</string>
+    	<string name="stereo">Stereo</string>
+    	<string name="mono">Mono</string>
+    	<string name="left_channel_double">Double Left Channel</string>
+    	<string name="right_channel_double">Double Right Channel</string>
+    	<string name="right_channel_single">Single Right Channel</string>
+    	<string name="left_channel_single">Single Left Channel</string>
+    	
+    	<string name="add_to_favorite">Add To Favorites</string>
+    	<string name="enter_favorite">Enter Favorites</string>
+    	<string name="favorite_is_full">Favorite is full</string>
+    	<string name="favorite_is_empty">Favorite is empty</string>
+    	<string name="remove_from_favorite">Remove from favorites</string>
+    	
+    	<string name="error">Error</string>
+    	<string name="media_server_died">Media server died</string>
+    	<string name="not_valid_for_progressive_playback">Video is not a valid progressive stream</string>
+    	<string name="unknown_error">Unknown error, probably initialization is not completed, or other error</string>
+    	
+    	<string name="dmr_play_request">DMR play request</string>
+    	<string name="dmr_play_request_content">"The media address of DMR request playback is as follows: "</string>
+    	<string name="network_disconnect">Network is Disconnected</string>
+		<string name="current_device_is_offline">Current device is offline</string>
+		
+		<string name="sort">Sort</string>
+		<string name="sort_by_name">Sort by name</string>
+		<string name="sort_by_date">Sort by date</string>
+		<string name="sort_by_size">Sort by size</string>
+		
+</resources>

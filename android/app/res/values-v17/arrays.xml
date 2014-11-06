@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+       <!-- 菜单选项 -->
+       <string-array name="items_hi3716c">
+               <item>播放模式</item>
+               <item>3D模式转换</item>
+               <item>跳 转 到</item>
+               <item>退出全屏</item>
+               <item>标签选项</item>
+               <item>seek幅度</item>
+               <item>字幕设置</item>
+               <item>音轨切换</item>
+               <item>添加到列表</item>
+       </string-array>
+
+	   <string-array name="items_hi3716m">
+               <item>播放模式</item>
+               <item>跳 转 到</item>
+               <item>退出全屏</item>
+               <item>标签选项</item>
+               <item>seek幅度</item>
+               <item>字幕设置</item>
+               <item>音轨切换</item>
+               <item>添加到列表</item>
+       </string-array>
+
+       <!-- the popup menu items when open from file manager-->
+       <string-array name="items_fm_hi3716c">
+               <item>播放模式</item>
+               <item>3D模式转换</item>
+               <item>跳 转 到</item>
+               <item>退出全屏</item>
+               <item>标签选项</item>
+               <item>seek幅度</item>
+               <item>字幕设置</item>
+               <item>音轨切换</item>
+       </string-array>
+
+	   <string-array name="items_fm_hi3716m">
+               <item>播放模式</item>
+               <item>跳 转 到</item>
+               <item>退出全屏</item>
+               <item>标签选项</item>
+               <item>seek幅度</item>
+               <item>字幕设置</item>
+               <item>音轨切换</item>
+       </string-array>
+
+       <!-- 标签选项 -->
+       <string-array name="items_mark">
+               <item>设置标签</item>
+               <item>获得当前视频标签</item>
+               <item>获得全部标签</item>
+               <item>删除全部标签</item>
+       </string-array>
+       <!-- 3D选项 -->
+       <string-array name="items_3D">
+			<item>2D模式</item>
+			<item>左右3D</item>
+			<item>上下3D</item>
+       </string-array>
+       <!-- 音量选项 -->
+       <string-array name="items_volumn">
+               <item>音量+</item>
+               <item>音量-</item>
+       </string-array>
+       <string-array name="sub_items">
+               <item>字幕选择</item>
+               <item>字幕显示</item>
+               <item>字幕切换</item>
+               <item>字幕编码</item>
+               <item>时间调节</item>
+
+               <item>字体颜色</item>
+               <item>字体大小</item>
+               <item>字幕位置</item>
+               <item>字体效果</item>
+               <item>字幕行距</item>
+               <item>字符间距</item>
+       </string-array>
+       <!--
+               <string-array name="subselect"> <item>显示字幕</item> <item>关闭字幕</item>
+               </string-array>
+       -->
+       <string-array name="colors">
+               <item>白色</item>
+               <item>黑色</item>
+               <item>红色</item>
+               <item>黄色</item>
+               <item>蓝色</item>
+               <item>绿色</item>
+       </string-array>
+       <string-array name="sizes">
+               <item>30</item>
+               <item>40</item>
+               <item>50</item>
+               <item>60</item>
+               <item>70</item>
+               <item>80</item>
+       </string-array>
+
+       <string-array name="effect">
+               <item>正常</item>
+               <item>阴影</item>
+               <item>空心字</item>
+               <item>粗体</item>
+               <item>斜体</item>
+               <item>描边</item>
+       </string-array>
+
+       <string-array name="position">
+               <item>30</item>
+               <item>80</item>
+               <item>130</item>
+               <item>180</item>
+               <item>230</item>
+               <item>280</item>
+               <item>330</item>
+               <item>380</item>
+       </string-array>
+       <string-array name="encode">
+               <item>GBK</item>
+               <item>Big5</item>
+               <item>GB2312</item>
+               <item>ASCII</item>
+               <item>UTF-8</item>
+               <item>其它</item>
+       </string-array>
+       <string-array name="time">
+               <item>-300</item>
+               <item>-200</item>
+               <item>-100</item>
+               <item>0</item>
+               <item>100</item>
+               <item>200</item>
+               <item>300</item>
+       </string-array>
+       <string-array name="audio_chan_mode">
+               <item>立体声</item>
+               <item>单声道</item>
+               <item>左声道</item>
+               <item>右声道</item>
+       </string-array>
+       <string-array name="scanmode">
+               <item>列表模式</item>
+               <item>海报模式</item>
+               <item>缩略图模式</item>
+               <item>预览模式</item>
+       </string-array>
+       <string-array name="playlist">
+               <item>最近添加</item>
+               <item>最近播放</item>
+               <item>全部电影</item>
+               <item>我的电影</item>
+       </string-array>
+       <string-array name="mode">
+               <item>顺序播放</item>
+               <item>全部循环</item>
+               <item>单个循环</item>
+               <item>单个播放</item>
+               <item>随机播放</item>
+       </string-array>
+       <string-array name="lang">
+           <item>默认</item>
+               <item>中文</item>
+               <!-- <item>英文</item> -->
+               <item>西语</item>
+               <item>中欧</item>
+       </string-array>
+       
+       <!-- The sort element position must be consistent with the corresponding sort id in PublicConstants -->
+       <string-array name="sort_option_items">
+               <item>按名称排序</item>
+               <item>按日期排序</item>
+               <item>按大小排序</item>
+       </string-array>
+</resources>

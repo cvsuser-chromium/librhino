@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的媒体</string>
+    
+    <!-- start frame上部菜单字符串 -->
+    <string name="movie_symbol">|</string>
+
+    <!-- 查看方式 -->
+    <string name="playlist_menu_scanmode">查看方式</string>
+    <string name="playlist_menu_scanmode_list">列表</string>
+    <string name="playlist_menu_scanmode_thumb">缩略图</string>
+    <string name="playlist_menu_scanmode_poster">海报</string>
+    <string name="playlist_menu_scanmode_prescan">预览</string>
+
+    <!-- 电影排序 -->
+    <string name="playlist_menu_order">电影排序</string>
+    <string name="playlist_menu_order_title">按名称排列</string>
+    <string name="playlist_menu_order_add_date">按添加时间排列</string>
+    <string name="playlist_menu_order_size">按大小排列</string>
+
+    <!-- 播放列表 -->
+    <string name="playlist_menu_latestplayed">最近播放</string>
+    <string name="playlist_menu_all">全部影片</string>
+
+    <!-- 我的最爱 -->
+    <string name="playlist_menu_playlist">播放列表</string>
+    <string name="playlist_menu_modifylistname">列表名称修改</string>
+    <string name="playlist_menu_newlistname">列表新名称</string>
+    <!-- end frame上部菜单字符串 -->
+
+
+    <!-- start frame底部提示 -->
+    <string name="playlist_bottom_add">添加到我的最爱</string>
+    <string name="play_bottom_del">删除文件</string>
+    <string name="playlist_bottom_info">信息查看</string>
+    <string name="playlist_bottom_del">从此列表删除</string>
+    <string name="playlist_bottom_help">帮助</string>
+    <!-- end frame底部提示 -->
+
+
+    <!-- start 其他字符串 -->
+    <string name="playlist_dialog_deitail_title">详细信息</string>
+    <string name="playlist_dialog_detail_ok">确定</string>
+    <string name="playlist_detail_title">影片名称</string>
+    <string name="playlist_detail_filetyle">文件类型</string>
+    <string name="playlist_detail_adddate">添加时间</string>
+    <string name="playlist_detail_size">文件大小</string>
+    <string name="playlist_detail_videotime">播放时长</string>
+    <string name="playlist_modify_success">修改成功</string>
+    <string name="playlist_modify_fail">修改失败</string>
+    <string name="playlist_dialog_addto">添加到播放列表</string>
+    <string name="playlist_dialog_addto_front">将要被添加到：</string>
+    <string name="playlist_dialog_addto_end">添加到：</string>
+    <string name="scanner_finished">数据扫描完毕是否重新加载?</string>
+    <!-- end 其他字符串 -->
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="del_success">删除成功</string>
+    <string name="del_info">删除电影</string>
+    <string name="del_info_start">将要被删除！</string>
+    <string name="del_all">确定删除全部标签吗?</string>
+    <string name="no_video">暂无合适影片</string>
+    <string name="is_scanning">正在扫描多媒体文件......</string>
+    <string name="exit_vp">退出</string>
+    <string name="friendly_info">友情提示</string>
+    <string name="insert_sdcard">请插入sdcard</string>
+    <string name="down_data">正在加载数据...</string>
+    <string name="scanning_data">正在扫描数据...</string>
+    <string name="order_data">正在排序...</string>
+    <string name="please_wait">请等待</string>
+
+    <!-- 播放界面按钮 -->
+    <string name="choicePlayMode">请选择播放模式</string>
+    <string name="playmodeStr">播放模式</string>
+    <string name="nocycle">顺序播放</string>
+    <string name="fullScreenBtnStr">全屏</string>
+    <string name="stopButtonStr">停止</string>
+    <string name="pause">暂停</string>
+    <string name="markpointStr">所设置视频标签:</string>
+    <string name="marknameStr">标签名:</string>
+    <string name="markToast">*若没有设置标签,则将使用默认标签!</string>
+    <string name="quickPlayToastStr">*请输入1~9999之间的值!</string>
+    <string name="savemarkStr">保存</string>
+    <string name="cancelmarkStr">取消</string>
+    <string name="mediaInfo">影片信息</string>
+    <string name="medianameStr">影片名称:</string>
+    <string name="mediapathStr">影片路径:</string>
+    <string name="mediasizeStr">影片大小:</string>
+    <string name="prescan_filesize">大小：</string>
+    <string name="volumeStr">音量:</string>
+    <string name="list_mode">列表</string>
+    <string name="list_thumb">缩略图</string>
+    <string name="list_poster">海报</string>
+    <string name="video_control_menu">播放器控制菜单</string>
+    <string name="select_tag">标签选项...</string>
+    <string name="stereoMode_change">3D 模式转换</string>
+    <string name="tag">标签</string>
+    <string name="no_set_tag">您还没有设置书签</string>
+    <string name="now_video_playmode">当前播放模式为:</string>
+    <string name="not">否</string>
+    <string name="yes">是</string>
+    <string name="continue_playvideo">是否继续播放影片?</string>
+    <string name="show_control">显示控制</string>
+    <string name="play">播放</string>
+    <string name="recommend_success">收藏成功</string>
+    <string name="normal_screen">退出全屏</string>
+    <string name="save_success">保存成功</string>
+    <string name="video_tag">视频书签</string>
+    <string name="closed">关闭</string>
+    <string name="sdcard_pull">存储设备被移除</string>
+    <string name="video_no_set_tag">此视频还没有设置书签</string>
+    <string name="volumecontrol">音量控制</string>
+    <string name="volumed_lowest">已经到最小音量了</string>
+    <string name="volumed_high">已经到最大音量了</string>
+    <string name="tag_exist">此标签已经存在!</string>
+    <string name="open">打开</string>
+    <string name="delete">删除</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="jumpto">跳转到</string>
+    <string name="willjumpto">将跳转到</string>
+    <string name="toplay">处播放!</string>
+    <string name="outlimit">可能会超出视频长度</string>
+    <string name="setPrecision">设置视频快速播放精度!</string>
+    <string name="precisionvalue">精度值:</string>
+    <string name="addsuccess">视频已成功添加到列表</string>
+    <string name="subsetTitle">字幕设置</string>
+    <string name="showsub">显示字幕</string>
+    <string name="closesub">关闭字幕</string>
+    <string name="soundTrack">音轨</string>
+    <string name="maxforward">已是最大快进倍数</string>
+    <string name="maxrewind">已是最大快退倍数</string>
+    <string name="x_32">-32_X</string>
+    <string name="nosubTitle">无字幕</string>
+    <string name="noTrack">无音轨</string>
+    <string name="time">时间调节</string>
+    <string name="time1">时间戳</string>
+    <string name="position">字幕位置</string>
+    <string name="size">字体大小</string>
+    <string name="space">字符间距</string>
+    <string name="line_space">字幕行距</string>
+    <string name="subtitle">字幕</string>
+
+    <!-- add by 2011-8-4 weiyunkun -->
+    <string name="playlist_list_hour">小时</string>
+    <string name="playlist_list_minute">分钟</string>
+    <string name="playlist_list_second">秒</string>
+    <string name="playlist_detail_screen">分辨率</string>
+    <string name="playlist_detail_videocode">视频编码</string>
+    <string name="playlist_detail_audiocode">音频编码</string>
+    <string name="playlist_detail_playcount">播放次数</string>
+    <string name="info_mess">确定要退出吗</string>
+    <string name="no_sdcard">sdcard不存在</string>
+    <string name="no_recommend">暂无推荐</string>
+    <string name="del_info_end">吗？</string>
+    <string name="priorOneStr">上一个</string>
+    <string name="rewindStr">快退</string>
+    <string name="forwardStr">快进</string>
+    <string name="nextOneStr">下一个</string>
+    <string name="markStr">设置标签</string>
+    <string name="getmarkStr">获得标签</string>
+    <string name="volumeupStr">音量+</string>
+    <string name="volumedownStr">音量-</string>
+    <string name="sort_size">按大小排列</string>
+    <string name="sort_time">按添加时间排列</string>
+    <string name="sort_name">按名称排列</string>
+    <string name="list_pre_scan">预览</string>
+    <string name="text_control">字幕控制</string>
+    <string name="play_info">播放画面提示信息</string>
+    <string name="position_x_title">水平位置</string>
+    <string name="position_y_title">垂直位置</string>
+    <string name="position1">垂直位置</string>
+    <string name="subpathtitle">字幕路径：</string>
+    <string name="subencodetitle">字幕编码:</string>
+    <string name="subpathcub">*请选择字幕文件</string>
+    <string name="wrongsub">错误的字幕文件</string>
+    <string name="three">"..."</string>
+    <string name="nototaltime">"--:--:--"</string>
+    <string name="help_title">使用帮助手册</string>
+    <string name="close">关闭</string>
+    <string name="not_support_title">不支持的文件格式!</string>
+    <string name="not_support_content">对不起,本播放器暂不支持此文件格式!</string>
+    <string name="nofile">文件不存在!</string>
+    <string name="isloading">数据未准备好，请稍候!</string>
+    <string name="havenofile">没有标准的视频文件!</string>
+    <string name="disordered">数据未准备好,点击下一首可能会导致播放顺序混乱.</string>
+    
+    <!-- added by wtz -->
+    <string name="video">视频</string>
+    <string name="music">音乐</string>
+    <string name="photo">相片</string>
+    
+    <string name="zeroTime">00:00</string>
+    <string name="noMusic">无歌曲</string>
+    <string name="unknownInfo">未知信息</string>
+    
+    <string name="orderPlay">顺序播放</string>
+    <string name="randomPlay">随机播放</string>
+    <string name="singleTrack">单曲重复</string>
+    
+    <string name="show_detail_info">显示详细信息</string>
+    <string name="hide_detail_info">隐藏详细信息</string>
+    <string name="start_play_slide">已开启幻灯片播放</string>
+    <string name="stop_play_slide">已关闭幻灯片播放</string>
+    <string name="clockwise_rotation">顺时针旋转</string>
+    <string name="anticlockwise_rotation">逆时针旋转</string>
+    <string name="drawing_failure">绘图失败</string>
+    <string name="open_background_music">打开背景音乐</string>
+    <string name="close_background_music">关闭背景音乐</string>
+    
+    <string name="backDirectory">返回上一级</string>
+    <string name="imageCurrentPath">当前路径：</string>
+    <string name="musicCurrentPath">当前路径：</string>
+    <string name="currentPath">当前路径：</string>
+    
+    <string name="openAutoPlay">开启自动播放</string>
+    <string name="closeAutoPlay">关闭自动播放</string>
+    <string name="full_screen">全屏</string>
+    <string name="exit_full_screen">退出全屏</string>
+    <string name="switch_subtitle">切换字幕</string>
+    <string name="switch_audio_track">切换音轨</string>
+    <string name="switch_channel">切换声道</string>
+    <string name="stereo">立体声</string>
+    <string name="mono">单声道</string>
+    <string name="left_channel_double">左声道双输出</string>
+    <string name="right_channel_double">右声道双输出</string>
+    <string name="right_channel_single">右声道单输出</string>
+    <string name="left_channel_single">左声道单输出</string>
+    
+    <string name="add_to_favorite">添加到收藏</string>
+	<string name="enter_favorite">进入收藏</string>
+	<string name="favorite_is_full">收藏已满</string>
+	<string name="favorite_is_empty">收藏为空</string>
+	<string name="remove_from_favorite">从收藏中移除</string>
+	
+	<string name="error">错误</string>
+    <string name="media_server_died">媒体服务终止</string>
+    <string name="not_valid_for_progressive_playback">视频不是有效的渐进式流</string>
+    <string name="unknown_error">未知错误，可能是初始化未完成，或者其它错误</string>
+    
+    <string name="dmr_play_request">DMR播放请求</string>
+    <string name="dmr_play_request_content">DMR请求播放的媒体地址为：</string>
+    <string name="network_disconnect">网络已断开</string>
+    <string name="current_device_is_offline">当前设备已下线</string>
+    
+    <string name="sort">排序</string>
+    <string name="sort_by_name">按名称排序</string>
+    <string name="sort_by_date">按日期排序</string>
+    <string name="sort_by_size">按大小排序</string>
+    
+</resources>

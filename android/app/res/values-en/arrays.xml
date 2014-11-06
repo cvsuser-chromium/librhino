@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+       <!-- 菜单选项 -->
+       <string-array name="items_hi3716c">
+               <item>Play Mode</item>
+               <item>3D Mode change</item>
+               <item>Jump To</item>
+               <item>Quit Full Screen</item>
+               <item>Label Options</item>
+               <item>Seek Range</item>
+               <item>Subtitle Options</item>
+               <item>Switch Tracks</item>
+               <item>Add To Play List</item>
+       </string-array>
+
+	   <string-array name="items_hi3716m">
+               <item>Play Mode</item>
+               <item>Jump To</item>
+               <item>Quit Full Screen</item>
+               <item>Label Options</item>
+               <item>Seek Range</item>
+               <item>Subtitle Options</item>
+               <item>Switch Tracks</item>
+               <item>Add To Play List</item>
+       </string-array>
+
+       <!-- the popup menu items when open from file manager-->
+       <string-array name="items_fm_hi3716c">
+               <item>Play Mode</item>
+               <item>3D Mode change</item>
+               <item>Jump To</item>
+               <item>Quit Full Screen</item>
+               <item>Label Options</item>
+               <item>Seek Range</item>
+               <item>Subtitle Options</item>
+               <item>Switch Tracks</item>
+       </string-array>
+
+	   <string-array name="items_fm_hi3716m">
+               <item>Play Mode</item>
+               <item>Jump To</item>
+               <item>Quit Full Screen</item>
+               <item>Label Options</item>
+               <item>Seek Range</item>
+               <item>Subtitle Options</item>
+               <item>Switch Tracks</item>
+       </string-array>
+
+       <!-- 标签选项 -->
+       <string-array name="items_mark">
+               <item>Set Lables</item>
+               <item>Get Current Lables</item>
+               <item>Get All Lables</item>
+               <item>Delete All Lables</item>
+       </string-array>
+       <!-- 3D选项 -->
+       <string-array name="items_3D">
+			<item>normal 2D</item>
+			<item>side by side</item>
+			<item>top and bottom</item>
+       </string-array>
+       <!-- 音量选项 -->
+       <!--
+               <string-array name="items_volumn"> <item>Volume+</item>
+               <item>Volume-</item> </string-array>
+       -->
+       <string-array name="sub_items">
+               <item>Selection of subtitles</item>
+               <item>Is subtitles open</item>
+               <item>Subtitle switching</item>
+               <item>Subtitle encode</item>
+               <item>Time adjustment</item>
+
+               <item>Font color</item>
+               <item>Font size</item>
+               <item>Subtitles position</item>
+               <item>Font effect</item>
+               <item>The line spacing</item>
+               <item>Character spacing</item>
+       </string-array>
+       <!--
+               <string-array name="subselect"> <item>Display subtitles</item>
+               <item>Closed captioning</item> </string-array>
+       -->
+       <string-array name="colors">
+               <item>White</item>
+               <item>Black</item>
+               <item>Red</item>
+               <item>Yellow</item>
+               <item>Blue</item>
+               <item>Green</item>
+       </string-array>
+       <string-array name="sizes">
+               <item>30</item>
+               <item>40</item>
+               <item>50</item>
+               <item>60</item>
+               <item>70</item>
+               <item>80</item>
+       </string-array>
+       <string-array name="effect">
+               <item>Normal</item>
+               <item>Shadow</item>
+               <item>Hollow</item>
+               <item>Boldface</item>
+               <item>Italic</item>
+               <item>Stroke</item>
+       </string-array>
+       <string-array name="position">
+               <item>30</item>
+               <item>80</item>
+               <item>130</item>
+               <item>180</item>
+               <item>230</item>
+               <item>280</item>
+               <item>330</item>
+               <item>380</item>
+       </string-array>
+       <string-array name="encode">
+               <item>GBK</item>
+               <item>Big5</item>
+               <item>GB2312</item>
+               <item>ASCII</item>
+               <item>UTF-8</item>
+               <item>Other</item>
+       </string-array>
+       <string-array name="time">
+               <item>-300</item>
+               <item>-200</item>
+               <item>-100</item>
+               <item>0</item>
+               <item>100</item>
+               <item>200</item>
+               <item>300</item>
+       </string-array>
+       <string-array name="audio_chan_mode">
+               <item>Stereo</item>
+               <item>Mono</item>
+               <item>Left channel</item>
+               <item>Right channel</item>
+       </string-array>
+       <string-array name="scanmode">
+               <item>List mode</item>
+               <item>Poster mode</item>
+               <item>Thumbnail mode</item>
+               <item>Preview mode</item>
+       </string-array>
+       <string-array name="playlist">
+               <item>Recently added</item>
+               <item>Recently played</item>
+               <item>All the movies</item>
+               <item>My movie</item>
+       </string-array>
+       <string-array name="mode">
+               <item>Order of play</item>
+               <item>Full Cycle</item>
+               <item>Single cycle</item>
+               <item>Single play</item>
+               <item>Shuffle</item>
+       </string-array>
+       <string-array name="lang">
+               <item>default</item>
+               <item>Chinese</item>
+               <!-- <item>English</item> -->
+               <item>Spanish</item>
+               <item>Central Europe</item>
+       </string-array>
+
+       <!-- The sort element position must be consistent with the corresponding sort id in PublicConstants -->
+       <string-array name="sort_option_items">
+               <item>Sort by name</item>
+               <item>Sort by date</item>
+               <item>Sort by size</item>
+       </string-array>
+</resources>
