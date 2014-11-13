@@ -14,6 +14,7 @@
 *.pyo-2.4
 *.rules
 *.sdf
+*.opensdf
 *.sln
 *.slo
 *.swp
