@@ -23,6 +23,7 @@
       'type': 'executable',
       'dependencies': [
         '<(DEPTH)/base/base.gyp:base',
+        '<(DEPTH)/rhino/icebox/synclib.gyp:synclib',
         #'<(DEPTH)/rhino/airplay/airplay.gyp:airplay',
         #'<(DEPTH)/rhino/third_party/dlna_yuxing/yuxing_dlna.gyp:yuxing_dlna_impl',
         #'<(DEPTH)/rhino/third_party/libupnp-1.6.18/libupnp.gyp:libupnp',

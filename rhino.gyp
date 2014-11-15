@@ -18,6 +18,7 @@
       'type': 'none',
       'dependencies': [
         '<(DEPTH)/rhino/icebox/synclib.gyp:synclib',
+        '<(DEPTH)/jingle/jingle.gyp:jingle_unittests',
 #        '<(DEPTH)/rhino/airplay/airplay.gyp:airplay',
 #        '<@(android_app_targets)',
       ],

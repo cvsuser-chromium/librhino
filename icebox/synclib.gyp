@@ -24,8 +24,9 @@
       'dependencies': [
         '<(DEPTH)/base/base.gyp:base',
         '<(DEPTH)/net/net.gyp:net',
-        '<(DEPTH)/url/url.gyp:url_lib',        
-        '<(DEPTH)/third_party/libjingle/libjingle.gyp:libjingle',
+        '<(DEPTH)/url/url.gyp:url_lib',
+        '<(DEPTH)/jingle/jingle.gyp:notifier',
+        #'<(DEPTH)/third_party/libjingle/libjingle.gyp:libjingle',
       ],
       'defines': [
       ],
@@ -46,7 +47,7 @@
         '<(DEPTH)/base/base.gyp:base',
       ],
       'sources': [
-        'synclib_main.cc',
+        'synclib.cc',
       ],
       'conditions': [
         ['OS=="linux"', {
