@@ -9,5 +9,7 @@ set WEBKITLIBRARIESDIR=F:\svn_beijing\webkit-r55397\Branches\WebKit-r57134\WebKi
 set HIPPO_GLUE_PATH=F:\svn_beijing\webkit-r55397\Branches\WebKit-r57134\WebCore\Hippo_glue
 set HIPPO_PATH=F:\svn_beijing\ChinaTC_IPTV20\Branches\Experiment
 
-pushd E:\chromium\src\chromium-rhino-win\src\
-python build\gyp_chromium rhino\rhino.gyp --depth=. && devenv rhino\rhino.sln
+@echo off
+pushd %~dp0\..
+
+python build\gyp_chromium rhino\rhino.gyp --depth=. && devenv rhino\rhino.sln /log

@@ -46,7 +46,7 @@
         '<(DEPTH)/base/base.gyp:base',
       ],
       'sources': [
-        'synclib_main.cc',
+        'synclib.cc',
       ],
       'conditions': [
         ['OS=="linux"', {
