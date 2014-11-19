@@ -19,16 +19,24 @@
           },
         },
       },
-      'target_name': 'synclib',
+      'target_name': 'airplay',
       'type': '<(component)',
       'dependencies': [
+        '<(DEPTH)/rhino/airplay/libplist/libplist.gyp:libplist',
+        '<(DEPTH)/rhino/airplay/mdnsresponder/mdnsresponder.gyp:mdnsresponder',
         '<(DEPTH)/base/base.gyp:base',
         '<(DEPTH)/net/net.gyp:net',
         '<(DEPTH)/url/url.gyp:url_lib',
-        '<(DEPTH)/jingle/jingle.gyp:notifier',
-        #'<(DEPTH)/third_party/libjingle/libjingle.gyp:libjingle',
+        '<(DEPTH)/rhino/third_party/libshairplay/libshairplay.gyp:libshairplay',
+        '<(DEPTH)/rhino/third_party/libPlatinum/libPlatinum.gyp:libPlatinum',
+        '<(DEPTH)/rhino/third_party/tinyxml/tinyxml.gyp:tinyxml',
+        '<(DEPTH)/rhino/third_party/json-c/json_c.gyp:json_c',
       ],
       'defines': [
+        'HAS_ZEROCONF',
+        'HAS_AIRPLAY',
+        'HAS_AIRTUNES',
+        #'HAS_UPNP',
       ],
       'include_dirs': [
         '.',
@@ -36,6 +44,10 @@
       ],
       'direct_dependent_settings': {
         'defines': [
+          'HAS_ZEROCONF',
+          'HAS_AIRPLAY',
+          'HAS_AIRTUNES',
+          #'HAS_UPNP',
         ],
         'include_dirs': [
           '.',
@@ -47,7 +59,42 @@
         '<(DEPTH)/base/base.gyp:base',
       ],
       'sources': [
-        'synclib.cc',
+        'airplay/commons/ilog.cpp',
+        'airplay/commons/Exception.cpp',
+        'airplay/interfaces/AnnouncementManager.cpp',
+        'airplay/network/airplay_server.cc',
+        #'network/AirPlayServer_newer.cpp',
+        'airplay/network/AirTunesServer.cpp',
+        'airplay/network/DNSNameCache.cpp',
+        'airplay/network/Zeroconf.cpp',
+        'airplay/network/ZeroconfBrowser.cpp',
+        'airplay/network/Network.cpp',
+        'airplay/network/NetworkServices.cpp',
+        'airplay/network/upnp/UPnP.cpp',
+        'airplay/network/upnp/UPnPInternal.cpp',
+        #'airplay/network/upnp/UPnPPlayer.cpp',
+        'airplay/network/upnp/UPnPRenderer.cpp',
+        'airplay/network/upnp/UPnPServer.cpp',
+        'airplay/network/upnp/UPnPSettings.cpp',
+        'airplay/network/mdns/ZeroconfMDNS.cpp',
+        'airplay/network/mdns/ZeroconfBrowserMDNS.cpp',
+        'airplay/threads/Atomics.cpp',
+        'airplay/threads/Event.cpp',
+        'airplay/threads/LockFree.cpp',
+        'airplay/threads/SystemClock.cpp',
+        'airplay/threads/Thread.cpp',
+        'airplay/threads/Timer.cpp',
+        'airplay/utils/HttpParser.cpp',
+        'airplay/utils/JobManager.cpp',
+        'airplay/utils/log.cpp',
+        'airplay/utils/EndianSwap.cpp',
+        #'utils/URIUtils.cpp',        
+        'airplay/utils/Variant.cpp',
+        'airplay/settings/AdvancedSettings.cpp',
+        'airplay/Application.cpp',
+        'airplay/FileItem.cpp',
+        #'URL.cpp',
+        #'Util.cpp',
       ],
       'conditions': [
         ['OS=="linux"', {
@@ -59,8 +106,12 @@
           'dependencies': [
           ],
           'include_dirs': [
+            '<(DEPTH)/rhino/airplay/linux',
           ],
           'sources': [
+            'airplay/network/linux/NetworkLinux.cpp',
+            'airplay/threads/platform/pthreads/Implementation.cpp',
+            'airplay/network/airplay_server_posix.cc',
           ],
           'cflags': [
             '-g',
@@ -78,8 +129,13 @@
           'dependencies': [
           ],
           'include_dirs': [
+            '<(DEPTH)/rhino/airplay/linux',
           ],
           'sources': [
+            'airplay/android/bionic_supplement/getdelim.c',
+            'airplay/network/linux/NetworkLinux.cpp',
+            'airplay/threads/platform/pthreads/Implementation.cpp',
+            'airplay/network/airplay_server_posix.cc',
           ],
           'cflags': [
             '-g',
@@ -93,6 +149,7 @@
               'TARGET_ANDROID',
             ],
             'include_dirs': [
+              '<(DEPTH)/rhino/airplay/linux',
             ],
           },
         }],
@@ -115,6 +172,7 @@
             'HAS_WIN32_NETWORK',
           ],
           'include_dirs': [
+            '<(DEPTH)/rhino/airplay/win32',
           ],
           'direct_dependent_settings': {
             'defines': [
@@ -148,10 +206,12 @@
             '/nologo',
           ],
           'sources': [
+            'airplay/network/airplay_server_win.cc',
+            'airplay/network/windows/NetworkWin32.cpp',
+            'airplay/threads/platform/win/Win32Exception.cpp',
           ],
         }],
       ],
     },
   ],
 }
-

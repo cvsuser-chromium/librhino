@@ -23,7 +23,7 @@
       'type': 'executable',
       'dependencies': [
         '<(DEPTH)/base/base.gyp:base',
-        '<(DEPTH)/rhino/icebox/synclib.gyp:synclib',
+        'synclib',
         #'<(DEPTH)/rhino/airplay/airplay.gyp:airplay',
         #'<(DEPTH)/rhino/third_party/dlna_yuxing/yuxing_dlna.gyp:yuxing_dlna_impl',
         #'<(DEPTH)/rhino/third_party/libupnp-1.6.18/libupnp.gyp:libupnp',
@@ -41,7 +41,7 @@
         #'./dlna_service.cc',
         #'./dlna_server.cc',
         #'./AirPlayClientWin32.cc',
-        './synclib_test.cc'
+        'win32/synclib_test.cc'
       ],
       'msvs_settings': {
         'VCLinkerTool': {
@@ -53,4 +53,3 @@
     },
   ],
 }
-
