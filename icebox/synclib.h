@@ -2,11 +2,22 @@
 #define _rhino_ICEBOX_H_
 
 #include "base/memory/weak_ptr.h"
+#include "base/memory/scoped_ptr.h"
 #include "base/synchronization/lock.h"
 #include "base/threading/thread.h"
 #include "base/threading/non_thread_safe.h"
 
+
+#include "remoting/jingle_glue/xmpp_signal_strategy.h"
+
+namespace remoting {
+class XmppSignalStrategy;
+}
+
 namespace Synclib{
+
+class SyncHostContext;
+
 class Synclib : public base::Thread
   , base::RefCountedThreadSafe<Synclib> {
 public:
@@ -32,6 +43,11 @@ protected:
 private:
   int init();
 
+  // XMPP server/remoting bot configuration (initialized from the command line).
+  remoting::XmppSignalStrategy::XmppServerConfig xmpp_server_config_;
+
+  scoped_ptr<SyncHostContext> context_;
+  scoped_ptr<remoting::XmppSignalStrategy> signal_strategy_;
 
   base::MessageLoop* message_loop_;
   base::WeakPtrFactory<Synclib> weak_factory_;

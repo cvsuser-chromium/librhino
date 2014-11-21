@@ -12,12 +12,17 @@
     # compilation targets to 'All'
     'android_app_targets%': [],
   },
+  'includes': [
+    'synclib.gypi',
+    'rhino_win32.gypi',
+    'airplay.gypi',
+  ],
   'targets': [
     {
       'target_name': 'All',
       'type': 'none',
       'dependencies': [
-        '<(DEPTH)/rhino/icebox/synclib.gyp:synclib',
+        'synclib',
         '<(DEPTH)/jingle/jingle.gyp:jingle_unittests',
 #        '<(DEPTH)/rhino/airplay/airplay.gyp:airplay',
 #        '<@(android_app_targets)',
@@ -36,7 +41,7 @@
         }],
         ['OS=="win"', {
           'dependencies': [
-            '<(DEPTH)/rhino/win32/rhino_win32.gyp:rhino.elf',
+            'rhino.elf',
           ],
         }],
       ],

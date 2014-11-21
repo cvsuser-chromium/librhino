@@ -8,6 +8,8 @@ int main(int argc, char** argv)
   base::AtExitManager at_exit;
   Synclib::Synclib* psync = Synclib::Synclib::get_instance();
 
+  psync->login();
+
 
    while(1) {
     Sleep(100);
